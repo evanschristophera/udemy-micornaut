@@ -1,6 +1,9 @@
 micronaut:
   application:
     name: quickstart
+  server:
+#    If there is no environment variable, port 8080 is used
+    port: ${SERVER_PORT:8080}
 netty:
   default:
     allocator:
