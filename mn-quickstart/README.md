@@ -1,11 +1,13 @@
 # MY STUFF
+## Section 2.12
+Using an interface.
 ## Dependency Injection -- Constructor
 * @Inject &#45; field based injection
 * Constructor based injection is preferred
   * fields can be final
   * Easily replace implementations  &#45; mocks
 * @Primary annotation specifies the primary implementation if there are multiple implementation
-* 
+
 
 ## Micronaut 3.4.0 Documentation
 

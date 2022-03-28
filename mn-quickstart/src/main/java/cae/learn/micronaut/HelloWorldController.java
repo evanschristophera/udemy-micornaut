@@ -7,15 +7,17 @@ import io.micronaut.http.annotation.Get;
 @Controller("/hello")
 public class HelloWorldController {
 
-    private final HelloWorldService service;
+    private final MyService service;
 
     //Constructor based injection
-    public HelloWorldController( HelloWorldService service) {
+    public HelloWorldController( MyService service) {
         this.service = service;
     }
 
+
+
     @Get(produces = MediaType.TEXT_PLAIN)
     public String helloWorld(){
-        return service.helloFromServce();
+        return service.helloFromService();
     }
 }
