@@ -13,21 +13,21 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 @MicronautTest
 public class HelloWorldControllerTest {
 
-    @Inject
+    @Inject // field based injection
     @Client("/")
     HttpClient client;
 
     @Test
     void helloWorldEndpointRespondsWithProperContent(){
         String response =  client.toBlocking().retrieve("/hello");
-        assertEquals( "Hello, World!", response );
+        assertEquals( "Hello from Service!", response );
     }
 
     @Test
     void helloWorldEndpointRespondsWithProperStatusCodeContent(){
         /*  IMPORTANT */
         HttpResponse response =  client.toBlocking().exchange("/hello", String.class );
-        assertEquals( "Hello, World!", response.getBody().get() );
+        assertEquals( "Hello from Service!", response.getBody().get() );
         assertEquals(HttpStatus.OK, response.getStatus());
 
     }
