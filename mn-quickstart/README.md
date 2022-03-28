@@ -1,4 +1,10 @@
 # MY STUFF
+## Section 2.14 configuration
+* Application.yml is main configuration file
+* Static
+* Setting for differenct environemnts
+  * environment properties
+* predefined micronaut variables have priority 
 ## Section 2.13 Logging
 * Logback is default logging framework
 * Only select one logging framework for application 
