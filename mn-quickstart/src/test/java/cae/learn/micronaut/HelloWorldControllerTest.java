@@ -32,5 +32,10 @@ public class HelloWorldControllerTest {
 
     }
 
-
+    @Test
+    void helloFromConfigEndpointReturnsMessageFromConfigFile(){
+        HttpResponse response = client.toBlocking().exchange( "/hello/config", String.class );
+        assertEquals( "Hello from application.yml!", response.getBody().get() );
+        assertEquals(HttpStatus.OK, response.getStatus());
+    }
 }
