@@ -1,0 +1,11 @@
+/.idea/
+/.gradle/
+/dockerfiles/data/
+/dockerfiles/tmp/
+development_resources/build/
+nohup.out
+server/bin/
+
+# Eclipse
+.project
+.settings/
