@@ -1,4 +1,9 @@
 # MY STUFF
+## Section 2.13 Logging
+* Logback is default logging framework
+* Only select one logging framework for application 
+* Logback.xml in resources
+* Test logging &#45; logback test file
 ## Section 2.12
 Using an interface.
 ## Dependency Injection -- Constructor
