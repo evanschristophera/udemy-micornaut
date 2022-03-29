@@ -1,8 +1,16 @@
 # Section Three -- Micronaut Web
+## 19 Http Routing &ndash; GET Requests
+* Symbols controller
+* Java 17 Record functionality.  
+  * Gets rid of boilerplate getters and setters
+  * Prior Java version would require Lombok
+* Modify logback.xml to show debug.
+* **Faker package for bs data**
+* Initialization does not happen until service is called.
 ## 18 &ndash; New Micronaut Web Project
 * Used Intellij new project dialog
 * Only adding netty server to start
-* 
+* PostConstruct - 
 ## Micronaut 3.4.0 Documentation
 
 - [User Guide](https://docs.micronaut.io/3.4.0/guide/index.html)

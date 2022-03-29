@@ -8,6 +8,9 @@ group = "com.evans.chris.stockbroker"
 
 repositories {
     mavenCentral()
+    maven {
+        url "https://repo1.maven.org/"
+    }
 }
 
 dependencies {
@@ -18,6 +21,8 @@ dependencies {
     implementation("jakarta.annotation:jakarta.annotation-api")
     runtimeOnly("ch.qos.logback:logback-classic")
     implementation("io.micronaut:micronaut-validation")
+// https://mvnrepository.com/artifact/net.datafaker/datafaker
+    implementation 'net.datafaker:datafaker:1.2.0'
 
 }
 
