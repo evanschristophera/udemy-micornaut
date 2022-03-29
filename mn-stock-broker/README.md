@@ -1,6 +1,15 @@
 # Section Three -- Micronaut Web
+## 22 Query Parameters
+* Query parameters are used to filter or search for specific data
+* http client file getSymbols.http is handy but unit tests are better.
+* Syntax
+```
+    @Get("/filter{?max,offset}")
+    public List<Symbol> getSymbols(@QueryValue Optional <Integer> max, @QueryValue Optional<Integer> offset ){
+```
 ## 21 Path Variables
 * The PathVariable annotation is the secret sauce
+* Used to get a particular object
 ## 20 Http Routing - GET requests JUnit
 * Unit Test instead of http client
   * Junit
