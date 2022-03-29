@@ -1,4 +1,8 @@
 # Section Three -- Micronaut Web
+## 20 Http Routing - GET requests JUnit
+* Unit Test instead of http client
+  * Junit
+  * 
 ## 19 Http Routing &ndash; GET Requests
 * Symbols controller
 * Java 17 Record functionality.  
