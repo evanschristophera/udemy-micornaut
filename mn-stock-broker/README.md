@@ -1,8 +1,10 @@
 # Section Three -- Micronaut Web
+## 21 Path Variables
+* The PathVariable annotation is the secret sauce
 ## 20 Http Routing - GET requests JUnit
 * Unit Test instead of http client
   * Junit
-  * 
+  * Micronaut creates JSON objects by default
 ## 19 Http Routing &ndash; GET Requests
 * Symbols controller
 * Java 17 Record functionality.  

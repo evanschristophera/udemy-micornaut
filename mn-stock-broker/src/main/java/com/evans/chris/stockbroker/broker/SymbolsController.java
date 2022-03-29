@@ -3,6 +3,7 @@ package com.evans.chris.stockbroker.broker;
 import com.evans.chris.stockbroker.broker.data.InMemoryStore;
 import io.micronaut.http.annotation.Controller;
 import io.micronaut.http.annotation.Get;
+import io.micronaut.http.annotation.PathVariable;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -23,5 +24,10 @@ public class SymbolsController {
     @Get
     public List<Symbol> getAll(){
         return new ArrayList<>(inMemoryStore.getSymbols().values());
+    }
+
+    @Get("{value}") //this name must match.....
+    public Symbol getSymbolByValue(@PathVariable String value ){ // the name used here
+        return inMemoryStore.getSymbols().get(value);
     }
 }
