@@ -1,4 +1,9 @@
 # MY STUFF
+## Section 2.15 Configuration Injection
+* added value to application.yml
+* Added 
+* Micronaut will attempt to inject every thing available in the constructor.
+  * Adding an annotation to the constructor parameter specifies which value is injected  
 ## Section 2.14 configuration
 * Application.yml is main configuration file
 * Static
@@ -18,7 +23,7 @@ Using an interface.
   * fields can be final
   * Easily replace implementations  &#45; mocks
 * @Primary annotation specifies the primary implementation if there are multiple implementation
-
+``
 
 ## Micronaut 3.4.0 Documentation
 
