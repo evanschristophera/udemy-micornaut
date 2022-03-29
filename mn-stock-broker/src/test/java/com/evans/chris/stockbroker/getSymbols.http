@@ -1,1 +1,8 @@
-GET localhost:8080/symbols/COMT
+GET localhost:8080/symbols/filter?offset=1&max=1
+
+
+
+
+
+
+
