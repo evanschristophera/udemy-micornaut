@@ -1,5 +1,6 @@
 package cae.learn.micronaut;
 
+import com.fasterxml.jackson.databind.JsonNode;
 import io.micronaut.http.HttpResponse;
 import io.micronaut.http.HttpStatus;
 import io.micronaut.http.client.HttpClient;
@@ -24,12 +25,10 @@ public class HelloWorldControllerTest {
     }
 
     @Test
-    void helloWorldEndpointRespondsWithProperStatusCodeContent(){
-        /*  IMPORTANT */
-        HttpResponse response =  client.toBlocking().exchange("/hello", String.class );
-        assertEquals( "Hello from Service!", response.getBody().get() );
+    void helloFromTranslationEndpointReturnsContentFromConfigFile() {
+        var response = client.toBlocking().exchange("/hello/translation", JsonNode.class);
         assertEquals(HttpStatus.OK, response.getStatus());
-
+        assertEquals("{\"de\":\"Hallo Welt\",\"en\":\"Hello World\"}", response.getBody().get().toString());
     }
 
     @Test
