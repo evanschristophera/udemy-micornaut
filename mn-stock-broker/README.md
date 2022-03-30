@@ -1,4 +1,6 @@
 # Section Three -- Micronaut Web
+## 23 Query Parameters with JUnit
+* 
 ## 22 Query Parameters
 * Query parameters are used to filter or search for specific data
 * http client file getSymbols.http is handy but unit tests are better.
